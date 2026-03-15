@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+/* Header */
+.header {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    background-image: url('./pharmacy.png');
+    width:40px;
+    height: 40px;
+    background-size: cover;
+
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout {
+    padding: 6px 14px;
+    border: 1px solid #ff0000;
+    background-color: #ff0000;
+    color: #ffffff;;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 500px;
+    background-image: url('../E-Commerce/Medical_2.jpg');
+    background-size: cover;
+    
+    
+}
+
+.hero-overlay {
+    
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #fa0606;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.hero p {
+     font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.primary-btn {
+    width: 400px;
+    height: 60px;
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 15px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Services */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #666;
+}
+
+.service-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0aa66c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Why Choose */
+.why {
+    padding: 40px 20px;
+    
+}
+.why h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#why-p{
+    text-align: center;
+    color: #f90000;
+    font-size: 20px;
+
+}
+
+.features {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-self:center;
+    font-size: 18px;
+}
+
+.features li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.why-image {
+    margin-top: 25px;
+    height: 160px;
+    background: hsla(0, 34%, 45%, 0.296);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* CTA */
+.cta {
+    background: #f90000;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.secondary-btn {
+    margin-top: 20px;
+    padding: 12px 22px;
+    border: none;
+    background: #ffffff;
+    color: #ff0000;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 20px;
+    background: #f9f9f9;
+}
+
+.footer-logo {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+.footer-section h4 {
+    margin-bottom: 6px;
+}
+
+.footer-section a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #555;
+}
+
+copyright {
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7f6;
+}
+.auth-box {
+    width: 600px;
+    height: 500px;
+    padding: 25px;
+    background: #324ad2;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.auth-box h2 {
+    color: #ff3700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.auth-box input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.auth-box button {
+    width: 100%;
+    padding: 20px;
+    background: #ff4000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 120px;
+}
+.switch {
+    margin-top: 12px;
+    font-size: 14px;
+    color: whitesmoke;
+}
+.switch span {
+    color: #fe0000;
+    cursor: pointer;
+}
+
+/* Hamburger */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top:0;
+    left: -266px;
+    width: 260px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background: #f2f2f2;
+}
+
+.sidebar-item.active {
+    background: #e6f7f0;
+    color: #0aa66c;
+}
+
+.booking-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.booking-section p{
+   text-align: center;
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
+
+
+.card-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card-box label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.drop-down-dh{
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background: #0aa66c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.appointment-card {
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.booking-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.card-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.card-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.book-btn {
+    margin-top: 20px;
+    padding: 12px;
+    background: #0aa66c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.appointment-card {
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.admin-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.admin-card select {
+    padding: 6px;
+    margin-top: 8px;
+}
+
+.admin-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.admin-actions button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.card-box input[type="text"], 
+.card-box input[type="date"], 
+.card-box input[type="time"], 
+.card-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 14px;
+}
